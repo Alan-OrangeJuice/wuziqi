@@ -10,8 +10,7 @@ function startGame() {
 <template>
   <div class="welcome">
     <h1 class="title">经典五子棋</h1>
-    <button class="start-button" @click="startGame" >开始游戏</button>
-    <button  variant="primary" >开始游戏</button>
+    <button class="start-button" @click="startGame" >进入游戏</button>
   </div>
 </template>
 
@@ -23,13 +22,14 @@ function startGame() {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(135deg, #d9a673, #f0d9b5);
+  background-color: rgba(217, 166, 115, 0.3); /* 设置为半透明背景色 */
+  border-radius: 15px; /* 设置圆角，数值可以根据需要调整 */
   text-align: center;
 }
 
 .title {
   font-size: 3rem;
-  color: #333;
+  color: #fff; /* 可以考虑将字体颜色改为白色，以便在背景上更好地显示 */
   margin-bottom: 20px;
   animation: fadeIn 1.5s ease;
 }
@@ -38,7 +38,7 @@ function startGame() {
   padding: 10px 20px;
   font-size: 1.5rem;
   color: #fff;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.8); /* 增加透明度的黑色，确保按钮清晰可见 */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -46,7 +46,7 @@ function startGame() {
 }
 
 .start-button:hover {
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 0.8);
 }
 
 /* 动画效果 */
@@ -55,3 +55,4 @@ function startGame() {
   to { opacity: 1; }
 }
 </style>
+

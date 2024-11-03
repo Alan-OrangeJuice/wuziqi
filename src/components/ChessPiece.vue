@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+//import { defineProps } from 'vue';  无需显式导入
 
 // const props = defineProps({
 //   color: {

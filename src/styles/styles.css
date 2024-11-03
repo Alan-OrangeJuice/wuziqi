@@ -1,0 +1,26 @@
+/* 保持棋盘正方形 */
+#game-board {
+    max-width: 600px; /* 限制最大宽度 */
+    margin: auto; /* 居中显示 */
+  }
+  
+  /* 控制按钮样式 */
+  #controls {
+    padding: 10px; /* 内边距 */
+    background-color: #f8f9fa; /* 背景颜色 */
+    border-radius: 8px; /* 圆角 */
+  }
+  
+  /* 调整按钮大小 */
+  .btn {
+    width: 100%; /* 使按钮宽度填满 */
+    margin-bottom: 10px; /* 按钮间距 */
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 576px) {
+    #game-board {
+      width: 100%; /* 小屏幕上棋盘宽度为 100% */
+    }
+  }
+  
